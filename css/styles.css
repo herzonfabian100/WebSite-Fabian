@@ -1,0 +1,76 @@
+    /* MEDIA QUERIES
+-------------------------------------------------*/
+    /*----- Video Size Portafolio -----*/
+    
+    .card-vid {
+        width: 110%;
+        max-width: 1000px;
+        height: auto;
+    }
+    
+    .card-vidprojects {
+        height: 200px;
+    }
+    /*----- Fonts -----*/
+    
+    .Arvo {
+        font-family: 'Arvo', serif;
+    }
+    
+    .Cairo {
+        font-family: 'Cairo', sans-serif;
+    }
+    
+    .Questrial {
+        font-family: 'Questrial', sans-serif;
+    }
+    /*----- Fonts  size-----*/
+    
+    .fontsize {
+        font-size: large;
+    }
+    
+    .em-wider {
+        letter-spacing: 0.7em;
+    }
+    /*--Button Blue Line--*/
+    
+    button:focus {
+        outline: none;
+    }
+    /* Style all font awesome icons */
+    
+    .fa {
+        padding: 10px;
+        font-size: 50px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+    /* Add a hover effect if you want */
+    
+    .fa:hover {
+        opacity: 0.7;
+        color: black;
+    }
+    /* Set a specific color for each brand */
+    /* Facebook */
+    
+    .fa-facebook {
+        color: rgb(141, 140, 140);
+    }
+    /* Twitter */
+    
+    .fa-twitter {
+        color: rgb(141, 140, 140);
+    }
+    /* Instagram */
+    
+    .fa-instagram {
+        color: rgb(141, 140, 140);
+    }
+    /* Linkedin */
+    
+    .fa-linkedin {
+        color: rgb(141, 140, 140);
+    }

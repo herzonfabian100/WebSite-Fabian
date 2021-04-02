@@ -6,17 +6,203 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Portafolio Fabian Aparicio</title>
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cairo:wght@200&family=Questrial&display=swap" rel="stylesheet">
+
     <!-- css tylesheet -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- NavBar-->
+
+
+
 </head>
 
+
+
 <body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img class="embed-responsive-item" src="img/logo.001.jpeg" alt="LOGO FABIAN" width="180" height="50" class="d-inline-block align-top" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-muted bg-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted bg-light" href="#SocMed">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalLong">About Me</a>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-secondary text-center" id="exampleModalLongTitle">FABIAN APARICIO</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class=" text-justify text-secondary mb-0 p-4">
+                                            Born and raised in Bogota Colombia, passionate about knowledge, social equity and helping others.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted bg-light" href="contact.html">Tak With Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+
+    </header>
+
+
+    <div class="jumbotron jumbotron-fluid my-2 bg-white">
+        <div class="container-fluid bg-white">
+            <div class="card w-auto border-0 mb-3 mt-4">
+                <div class="row no-gutters">
+                    <div class="col-md-6 embed-responsive-item">
+                        <video class="card-vid" loop="true" autoplay="autoplay" controls="controls" id="vidprofile" muted>
+                        <source type="video/mp4" src="vid/Profile.mp4" alt="Profile Video" ></source>
+                        <source type="video/ogg" src="video_file.ogg"></source>
+                        </video>
+
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <div class="card-body p-0">
+                            <h6 class="card-title text-muted Cairo em-wider">FABIAN APARICIO </h6>
+                            <h1 class="card-text  Arvo Questrial">Website Designer</h1>
+                            <p class="card-text Arvo text-secondary fontsize">
+                                Over these last interesting years, full of challenges and new discoveries, as an entrepreneur and dedicated hard student, I've been passionate about everything related to the IT field and its different branches, which helps shape the world in connection
+                                to generate amazing benefits for the human being, creating innovative and also different tools that create and evolutionary aspects to improve our daily tasks. All these aspects contributed to my dedication to building
+                                different projects focused on the customer's needs so that they can connect with the world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid p-5" id="Proj">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left text-secondary Cairo em-wider" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h5>HISTORY OF AIRPLANES PROJECT</h5>
+                            
+                  </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card w-auto border-0 mb-3 mt-2">
+                            <div class="row no-gutters">
+                                <div class="col-md-6 embed-responsive-item">
+                                    <video class="card-vidprojects p-0 mt-2 ml-5" loop="true" autoplay="autoplay" controls="controls" id="vid" muted>
+                                <source type="video/mp4" src="vid/Air.mp4" alt="Profile Video" ></source>
+                                <source type="video/ogg" src="video_file.ogg"></source>
+                                </video>
+
+                                </div>
+                                <div class="col-md-6 p-0">
+                                    <div class="card-body p-0">
+                                        <p class="card-text Arvo text-secondary fontsize">
+                                            History Of Airplanes is dedicated to all lovers of airplanes and their evolution over time. This page is highlighted with different shades of blue, making it attractive to visitors.
+                                            <p class="card-text Arvo Questria text-right font-weight-bold">
+                                                <a href=" https://herzonfabian100.github.io/parallax-practice-F/">Visit Project</a>
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-right collapsed text-secondary Cairo em-wider" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <h5> VINCENT VAN GOGH PROJECT</h5>   
+                     </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card w-auto border-0 mb-3 mt-2">
+                            <div class="row no-gutters">
+                                <div class="col-md-6 embed-responsive-item">
+                                    <video class="card-vidprojects p-0 mt-2 ml-5" loop="true" autoplay="autoplay" controls="controls" id="vid" muted>
+                                <source type="video/mp4" src="vid/VanGO.mp4" alt="Profile Video" ></source>
+                                <source type="video/ogg" src="video_file.ogg"></source>
+                                </video>
+
+                                </div>
+                                <div class="col-md-6 p-0">
+                                    <div class="card-body p-0">
+
+                                        <p class="card-text Arvo text-secondary fontsize">
+                                            Vincent Van Gogh website es dirigido a todos los amantes de los diferentes colores que se pueden apreciar en las obras del maestro Van Gogh.
+                                            <p class="card-text Arvo Questria text-right font-weight-bold">
+                                                <a href="https://herzonfabian100.github.io/carousel-practice-F/">Visit Project</a>
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="js/java.js"></script>
+    <!--Social Media-->
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 </body>
+
+<footer>
+    <div class="container text-center font-weight-bold">
+        <div class="col p-5" style="font-size: 2rem;" id="SocMed">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://linkedin.com/" class="fa fa-linkedin"></a>
+        </div>
+    </div>
+</footer>
 
 </html>

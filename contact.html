@@ -6,17 +6,178 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Form Contact</title>
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cairo:wght@200&family=Questrial&display=swap" rel="stylesheet">
+
     <!-- css tylesheet -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- NavBar-->
+
+
+
 </head>
 
+
+
 <body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img class="embed-responsive-item" src="img/logo.001.jpeg" alt="LOGO FABIAN" width="180" height="50" class="d-inline-block align-top" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-muted bg-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted bg-light" href="#SocMed">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalLong">About Me</a>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-secondary text-center" id="exampleModalLongTitle">FABIAN APARICIO</h5>
+                                        <button class="btn btn-outline-dark" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class=" text-justify text-secondary mb-0 p-4">
+                                            Born and raised in Bogota Colombia, passionate about knowledge, social equity and helping others.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" data-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted bg-light" href="contact.html">Tak With Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+
+    </header>
+
+    <section>
+        <div id="contact">
+            <div class="d-flex justify-content-center text-center mb-5">
+                <p class="heading main_bg_color h3">
+                    Contact & F.A.Q
+                </p>
+            </div>
+            <div class="row pb-5" id="contact">
+                <!-- FORM -->
+                <div class="col-md-5 offset-1">
+                    <form>
+                        <div class="form-group">
+                            <label for="nameInput" class="label_required_field">Name</label>
+                            <Input type="text" class="form-control" id="nameInput" />
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput" class="label_required_field">Email</label>
+                            <Input type="email" class="form-control" id="emailInput" />
+                        </div>
+                        <div class="form-group">
+                            <label for="messageInput" class="label_required_field">Message</label>
+                            <textarea class="form-control" id="messageInput" rows="3"></textarea>
+                        </div>
+                        <button class="btn text-primary btn-block">Submit</button>
+                    </form>
+                    <div class="hide" data-form-confirmation-popup>
+
+                    </div>
+                </div>
+                <!-- FAQ -->
+                <div class="col-md-5">
+                    <p class="text-muted font-weight-lighter">Frequently Asked Questions</p>
+                    <div id="accordion">
+                        <!-- Q1 - CARD -->
+                        <div class="card my-3">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            About Me?
+                            </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Born and raised in Bogota Colombia, passionate about knowledge, social equity and helping others.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Q2 - CARD -->
+                        <div class="card my-3">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            About Colombia?
+                            </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Colombia, officially the Republic of Colombia, is a country in South America with territories in North America. Colombia is bounded on the north by the Caribbean Sea, the northwest by Panama, the south by Ecuador and Peru, the east by Venezuela, the southeast
+                                    by Brazil, and the west by the Pacific Ocean
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Q3 - CARD -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="js/java.js"></script>
+    <!--Social Media-->
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </body>
+
+<footer>
+    <div class="container text-center font-weight-bold">
+        <div class="col p-5" style="font-size: 2rem;" id="SocMed">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://linkedin.com/" class="fa fa-linkedin"></a>
+        </div>
+    </div>
+</footer>
 
 </html>
